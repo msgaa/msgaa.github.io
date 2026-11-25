@@ -70,4 +70,4 @@ Allow: /
 # AI 요약 문서 (llmstxt.org 규격)
 # https://www.xn--o39apqm9nw3prta.kr/llms.txt
 
-Sitemap: https://honghm76-source.github.io/sitemap.xml
+Sitemap: https://msgaa.github.io/sitemap.xml
