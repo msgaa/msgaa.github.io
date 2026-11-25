@@ -1,0 +1,73 @@
+# robots.txt — 명성산업가스 (www.고순도가스.kr)
+# 사이트가 http 로 운영 중이면 아래 Sitemap 주소의 https 를 http 로 바꿔 주세요.
+
+# 기본: 모든 크롤러 허용
+User-agent: *
+Allow: /
+
+# 검색 엔진
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daum
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI 검색·학습 크롤러
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# AI 요약 문서 (llmstxt.org 규격)
+# https://www.xn--o39apqm9nw3prta.kr/llms.txt
+
+Sitemap: https://honghm76-source.github.io/sitemap.xml
