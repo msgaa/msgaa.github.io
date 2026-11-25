@@ -12,7 +12,7 @@
      현재 사이트는 SSL 인증서가 적용되지 않아 https 접속이 되지 않습니다.
      · SSL(예: Let's Encrypt / 호스팅 무료 인증서)을 설치하면 그대로 사용하시면 됩니다.
      · SSL 설치 전에 먼저 올려야 한다면 https:// 를 http:// 로 바꿔 주세요.
-  2) 표기 정보 출처 — 상호·대표자·사업자등록번호·주소·대표전화·이메일·영업시간은
+  2) 표기 정보 출처 — 상호·대표자·사업자등록번호·주소·대표전화는
      기존 홈페이지(고순도가스.kr) 하단 및 '연락처' 페이지에 게시된 내용을 그대로 사용했습니다.
      인허가(고압가스 판매업 2019-06-19)는 공개 인허가 데이터 기준입니다.
   3) 확인되지 않은 실적·인증 마크·수상 경력은 넣지 않았습니다.
@@ -59,7 +59,6 @@
   "url": "https://honghm76-source.github.io/",
   "description": "명성산업가스는 경기도 화성시 송산면 당성로에 있는 고압가스 판매업체로, 일반가스·특수가스(탄산, 질소, 헬륨)·의료용 가스·LPG를 경기도 화성시·시흥시·안산시 등 경기 서남부의 산업단지·제조업체·병원·연구시설에 공급합니다.",
   "telephone": "+82-31-492-3370",
-  "email": "famegas@naver.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "송산면 당성로 487-10",
@@ -72,20 +71,11 @@
     "latitude": 37.205899,
     "longitude": 126.715429
   },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  ],
   "contactPoint": [
     {
       "@type": "ContactPoint",
       "contactType": "sales",
       "telephone": "+82-31-492-3370",
-      "email": "famegas@naver.com",
       "areaServed": "KR",
       "availableLanguage": "Korean"
     },
@@ -127,16 +117,6 @@
       "@type": "PropertyValue",
       "name": "고압가스 판매업 인허가일",
       "value": "2019-06-19"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "점심시간",
-      "value": "12:00-13:00"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "휴무일",
-      "value": "토요일, 일요일, 공휴일"
     }
   ],
   "hasOfferCatalog": {
@@ -198,15 +178,15 @@
       "name": "견적은 어떻게 요청하면 되나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "전화 031-492-3370 또는 이메일 famegas@naver.com으로 문의해 주세요. 홈페이지 온라인 문의 게시판도 이용하실 수 있습니다. 가스 종류와 용도, 예상 소요량, 납품 장소, 희망 납품일을 함께 알려 주시면 견적을 안내해 드립니다."
+        "text": "전화 031-492-3370으로 문의해 주세요. 홈페이지 온라인 문의 게시판도 이용하실 수 있습니다. 가스 종류와 용도, 예상 소요량, 납품 장소, 희망 납품일을 함께 알려 주시면 견적을 안내해 드립니다."
       }
     },
     {
       "@type": "Question",
-      "name": "영업시간과 사업자 정보를 알려 주세요.",
+      "name": "사업자 정보를 알려 주세요.",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "상담 시간은 평일 09:00~18:00이며 점심시간은 12:00~13:00입니다. 토요일·일요일·공휴일은 휴무입니다. 상호는 명성산업가스, 대표자는 홍현명, 사업자등록번호는 380-42-00037이고, 사업장 주소는 경기도 화성시 송산면 당성로 487-10입니다."
+        "text": "상호는 명성산업가스, 대표자는 홍현명, 사업자등록번호는 380-42-00037이고, 사업장 주소는 경기도 화성시 송산면 당성로 487-10입니다."
       }
     }
   ]
@@ -540,6 +520,7 @@
   .hours-table td{color:var(--ink);font-weight:600;}
   .hours-table td span{display:block;font-weight:500;color:var(--ink-2);font-size:.88rem;margin-top:2px;}
   .support-list{display:grid;gap:12px;}
+  .support-list--wide{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
   .support-item{
     background:var(--white);border:1px solid var(--steel-200);border-radius:var(--radius-sm);
     padding:20px 22px;box-shadow:var(--shadow-sm);
@@ -733,13 +714,6 @@
             </svg>
             전화로 문의하기
           </a>
-          <a class="btn btn-ghost" href="mailto:famegas@naver.com?subject=%5B%EC%A0%9C%ED%92%88%20%EB%AC%B8%EC%9D%98%5D%20%EA%B0%80%EC%8A%A4%20%EC%A2%85%EB%A5%98%C2%B7%EC%86%8C%EC%9A%94%EB%9F%89%C2%B7%EB%82%A9%ED%92%88%EC%A7%80">
-            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="5.2" width="18" height="13.6" rx="2.4"/>
-              <path d="m3.8 6.6 8.2 5.6 8.2-5.6"/>
-            </svg>
-            이메일로 견적 요청
-          </a>
         </div>
         <ul class="hero-tags">
           <li>고압가스 판매업 인허가 2019</li>
@@ -842,10 +816,6 @@
             납품 지역은 <strong>화성시·시흥시·안산시</strong>를 중심으로 한 경기 서남부 일대의
             산업단지·제조업체·병원·연구시설입니다. 대표자가 직접 상담하고 견적을 안내합니다.
           </p>
-          <p>
-            상담 시간은 <strong>평일 09:00~18:00</strong>(점심 12:00~13:00)이고,
-            토요일·일요일·공휴일은 휴무입니다.
-          </p>
         </div>
 
         <div class="info-card">
@@ -864,8 +834,6 @@
             <div><dt>인허가</dt><dd>고압가스 판매업 <span class="license-chip">2019-06-19 인허가</span></dd></div>
             <div><dt>대표전화</dt><dd><a href="tel:+82314923370">031-492-3370</a></dd></div>
             <div><dt>휴대전화</dt><dd><a href="tel:+821087511400">010-8751-1400</a></dd></div>
-            <div><dt>이메일</dt><dd><a href="mailto:famegas@naver.com">famegas@naver.com</a></dd></div>
-            <div><dt>영업시간</dt><dd>평일 09:00~18:00<br><span class="muted">점심 12:00~13:00 · 토·일·공휴일 휴무</span></dd></div>
           </dl>
         </div>
       </div>
@@ -1036,65 +1004,37 @@
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">고객지원</span>
-        <h2 id="support-title">상담 시간과 자료 안내</h2>
+        <h2 id="support-title">자료와 문의 안내</h2>
         <p>전화 상담과 온라인 문의를 함께 받고 있습니다. 방문 전에 전화로 일정을 확인해 주시면 편합니다.</p>
       </div>
 
-      <div class="support-grid">
-        <div class="hours-card">
+      <div class="support-list support-list--wide">
+        <div class="support-item">
           <h3>
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="8.6"/><path d="M12 7.6V12l3 1.8"/>
+              <path d="M13.5 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z"/><path d="M13.5 3.5V9H19"/>
             </svg>
-            상담 시간
+            가스자료실 (MSDS)
           </h3>
-          <table class="hours-table">
-            <caption class="sr-only">명성산업가스 상담 시간과 휴무일</caption>
-            <tbody>
-              <tr>
-                <th scope="row">평일</th>
-                <td>09:00 ~ 18:00<span>점심시간 12:00 ~ 13:00</span></td>
-              </tr>
-              <tr>
-                <th scope="row">휴무일</th>
-                <td>토요일 · 일요일 · 공휴일<span>휴무일 문의는 이메일로 남겨 주세요</span></td>
-              </tr>
-              <tr>
-                <th scope="row">대표전화</th>
-                <td><a href="tel:+82314923370">031-492-3370</a><span>휴대전화 <a href="tel:+821087511400">010-8751-1400</a></span></td>
-              </tr>
-            </tbody>
-          </table>
+          <p>프로판 MSDS 등 가스 물질안전보건자료를 자료실에 올려 두었습니다. <a href="http://www.xn--o39apqm9nw3prta.kr/bbs/board.php?bo_table=0301" target="_blank" rel="noopener noreferrer">가스자료실 바로가기</a></p>
         </div>
-
-        <div class="support-list">
-          <div class="support-item">
-            <h3>
-              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M13.5 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z"/><path d="M13.5 3.5V9H19"/>
-              </svg>
-              가스자료실 (MSDS)
-            </h3>
-            <p>프로판 MSDS 등 가스 물질안전보건자료를 자료실에 올려 두었습니다. <a href="http://www.xn--o39apqm9nw3prta.kr/bbs/board.php?bo_table=0301" target="_blank" rel="noopener noreferrer">가스자료실 바로가기</a></p>
-          </div>
-          <div class="support-item">
-            <h3>
-              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 5.4h16v10.2H9.6L4 19.4z"/><path d="M8.4 10.5h7.2"/>
-              </svg>
-              온라인 문의
-            </h3>
-            <p>전화가 어려우면 온라인 문의 게시판에 남겨 주세요. 확인 후 순서대로 답변드립니다. <a href="http://www.xn--o39apqm9nw3prta.kr/bbs/write.php?bo_table=0401" target="_blank" rel="noopener noreferrer">온라인 문의하기</a></p>
-          </div>
-          <div class="support-item">
-            <h3>
-              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
-              </svg>
-              사업장 위치
-            </h3>
-            <p>경기도 화성시 송산면 당성로 487-10. 방문 상담은 전화로 먼저 일정을 확인해 주세요.</p>
-          </div>
+        <div class="support-item">
+          <h3>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 5.4h16v10.2H9.6L4 19.4z"/><path d="M8.4 10.5h7.2"/>
+            </svg>
+            온라인 문의
+          </h3>
+          <p>전화가 어려우면 온라인 문의 게시판에 남겨 주세요. 확인 후 순서대로 답변드립니다. <a href="http://www.xn--o39apqm9nw3prta.kr/bbs/write.php?bo_table=0401" target="_blank" rel="noopener noreferrer">온라인 문의하기</a></p>
+        </div>
+        <div class="support-item">
+          <h3>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+            </svg>
+            사업장 위치
+          </h3>
+          <p>경기도 화성시 송산면 당성로 487-10. 방문 상담은 전화로 먼저 일정을 확인해 주세요.</p>
         </div>
       </div>
     </div>
@@ -1105,7 +1045,7 @@
       <div class="section-head">
         <span class="kicker">제품문의</span>
         <h2 id="inquiry-title">세 가지만 알려 주시면 견적을 안내해 드립니다</h2>
-        <p>전화·이메일·온라인 문의로 받고 있습니다. 아래 내용을 함께 알려 주시면 상담이 빠릅니다.</p>
+        <p>전화와 온라인 문의로 받고 있습니다. 아래 내용을 함께 알려 주시면 상담이 빠릅니다.</p>
       </div>
 
       <div class="steps">
@@ -1147,17 +1087,6 @@
           <span>
             <span class="label">휴대전화</span>
             <span class="value">010-8751-1400</span>
-          </span>
-        </a>
-        <a class="contact-item" href="mailto:famegas@naver.com?subject=%5B%EC%A0%9C%ED%92%88%20%EB%AC%B8%EC%9D%98%5D%20%EA%B0%80%EC%8A%A4%20%EC%A2%85%EB%A5%98%C2%B7%EC%86%8C%EC%9A%94%EB%9F%89%C2%B7%EB%82%A9%ED%92%88%EC%A7%80">
-          <span class="ci" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="5.2" width="18" height="13.6" rx="2.4"/><path d="m3.8 6.6 8.2 5.6 8.2-5.6"/>
-            </svg>
-          </span>
-          <span>
-            <span class="label">이메일</span>
-            <span class="value">famegas@naver.com</span>
           </span>
         </a>
         <a class="contact-item" href="http://www.xn--o39apqm9nw3prta.kr/bbs/write.php?bo_table=0401" target="_blank" rel="noopener noreferrer">
@@ -1218,16 +1147,15 @@
         <details>
           <summary><span class="q" aria-hidden="true">Q</span>견적은 어떻게 요청하면 되나요?</summary>
           <div class="answer">
-            전화 <a href="tel:+82314923370">031-492-3370</a> 또는 이메일 <a href="mailto:famegas@naver.com">famegas@naver.com</a>으로
-            문의해 주세요. 홈페이지 온라인 문의 게시판도 이용하실 수 있습니다.
+            전화 <a href="tel:+82314923370">031-492-3370</a>로 문의해 주세요.
+            홈페이지 온라인 문의 게시판도 이용하실 수 있습니다.
             가스 종류와 용도, 예상 소요량, 납품 장소, 희망 납품일을 함께 알려 주시면 견적을 안내해 드립니다.
           </div>
         </details>
 
         <details>
-          <summary><span class="q" aria-hidden="true">Q</span>영업시간과 사업자 정보를 알려 주세요.</summary>
+          <summary><span class="q" aria-hidden="true">Q</span>사업자 정보를 알려 주세요.</summary>
           <div class="answer">
-            상담 시간은 <strong>평일 09:00~18:00</strong>이며 점심시간은 12:00~13:00입니다. 토요일·일요일·공휴일은 휴무입니다.
             상호는 명성산업가스, 대표자는 홍현명, 사업자등록번호는 <strong>380-42-00037</strong>이고,
             사업장 주소는 경기도 화성시 송산면 당성로 487-10입니다.
           </div>
@@ -1263,7 +1191,6 @@
       <dl class="footer-contact">
         <div><dt>대표전화</dt><dd><a href="tel:+82314923370">031-492-3370</a></dd></div>
         <div><dt>휴대전화</dt><dd><a href="tel:+821087511400">010-8751-1400</a></dd></div>
-        <div><dt>이메일</dt><dd><a href="mailto:famegas@naver.com">famegas@naver.com</a></dd></div>
         <div><dt>주소</dt><dd>경기도 화성시 송산면 당성로 487-10</dd></div>
       </dl>
     </div>
@@ -1274,7 +1201,6 @@
       <div><dt>사업자등록번호</dt><dd>380-42-00037</dd></div>
       <div><dt>인허가</dt><dd>고압가스 판매업 (2019-06-19)</dd></div>
       <div><dt>소재지</dt><dd>경기도 화성시 송산면 당성로 487-10</dd></div>
-      <div><dt>영업시간</dt><dd>평일 09:00~18:00 (토·일·공휴일 휴무)</dd></div>
     </dl>
 
     <div class="footer-bottom">
