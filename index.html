@@ -381,7 +381,11 @@
   .hero-visual figcaption{
     margin-top:14px;text-align:center;font-size:.78rem;color:#8ba4b9;letter-spacing:.02em;
   }
-  .tankart{width:100%;max-width:430px;margin:0 auto;filter:drop-shadow(0 22px 40px rgba(0,0,0,.35));}
+  .hero-photo{
+    display:block;width:100%;max-width:430px;margin:0 auto;aspect-ratio:1/1;
+    object-fit:cover;border-radius:20px;border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 24px 52px rgba(0,0,0,.45),0 2px 0 rgba(255,255,255,.06) inset;
+  }
 
   /* ===== 주요 사실 띠 ===== */
   .facts{background:var(--navy-800);border-top:1px solid rgba(255,255,255,.08);}
@@ -457,6 +461,25 @@
     font-size:.72rem;font-weight:800;letter-spacing:.06em;color:var(--steel-500);
     font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   }
+
+  /* ===== 취급 용기 갤러리 ===== */
+  .cyl-block{margin-top:clamp(30px,4vw,44px);}
+  .cyl-block h3{font-size:1.1rem;margin-bottom:6px;}
+  .cyl-block .cyl-note{font-size:.88rem;color:var(--steel-500);margin-bottom:16px;}
+  .cyl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+  .cyl-card{
+    margin:0;display:flex;flex-direction:column;overflow:hidden;
+    background:var(--white);border:1px solid var(--steel-200);border-radius:var(--radius);
+    box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s,border-color .2s;
+  }
+  .cyl-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--steel-300);}
+  .cyl-card img{
+    display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;
+    background:#f7fafd;padding:14px;border-bottom:1px solid var(--steel-200);
+  }
+  .cyl-card figcaption{padding:18px 20px 22px;}
+  .cyl-card h4{font-size:.98rem;margin-bottom:8px;letter-spacing:-.01em;}
+  .cyl-card p{font-size:.9rem;color:var(--ink-2);line-height:1.72;}
 
   /* ===== 비교표 ===== */
   .table-block{margin-top:clamp(30px,4vw,44px);}
@@ -642,9 +665,10 @@
     .hero-inner{grid-template-columns:1fr;gap:36px;padding-bottom:52px;}
     .hero-visual{order:2;}
     .hero-visual figcaption{margin-top:6px;}
-    .tankart{max-width:330px;}
+    .hero-photo{max-width:330px;border-radius:16px;}
     .facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
     .about-grid,.area-grid,.support-grid,.footer-top{grid-template-columns:1fr;}
+    .cyl-grid{grid-template-columns:1fr;}
     .steps{grid-template-columns:1fr;}
   }
   @media (max-width:900px){
@@ -746,64 +770,8 @@
       </div>
 
       <figure class="hero-visual" style="margin:0">
-        <svg class="tankart" viewBox="0 0 420 330" role="img" aria-label="산업용 가스 용기와 공급 배관을 표현한 일러스트">
-          <defs>
-            <linearGradient id="bodyA" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#2f86d6"/><stop offset="1" stop-color="#123a5c"/>
-            </linearGradient>
-            <linearGradient id="bodyB" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#e9f2fa"/><stop offset=".55" stop-color="#b9cfe2"/><stop offset="1" stop-color="#7f9db8"/>
-            </linearGradient>
-            <linearGradient id="bodyC" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#8fb8d8"/><stop offset="1" stop-color="#3d6f96"/>
-            </linearGradient>
-            <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#0b1d2e" stop-opacity="0"/><stop offset=".5" stop-color="#2f86d6" stop-opacity=".45"/><stop offset="1" stop-color="#0b1d2e" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-
-          <rect x="30" y="292" width="360" height="2.5" rx="1.25" fill="url(#floor)"/>
-          <ellipse cx="210" cy="293" rx="150" ry="12" fill="#000" opacity=".25"/>
-
-          <path d="M126 236h34c10 0 18 8 18 18v14" fill="none" stroke="#6f93b3" stroke-width="4" stroke-linecap="round" opacity=".85"/>
-          <path d="M262 236h-14c-10 0-18 8-18 18" fill="none" stroke="#6f93b3" stroke-width="4" stroke-linecap="round" opacity=".55"/>
-
-          <g>
-            <rect x="86" y="106" width="82" height="186" rx="26" fill="url(#bodyA)"/>
-            <rect x="99" y="128" width="12" height="140" rx="6" fill="#ffffff" opacity=".14"/>
-            <rect x="102" y="82" width="50" height="30" rx="9" fill="#153a5b"/>
-            <rect x="116" y="64" width="22" height="22" rx="6" fill="#2f86d6"/>
-            <rect x="122" y="50" width="10" height="16" rx="5" fill="#9fc6e8"/>
-            <rect x="98" y="176" width="58" height="26" rx="6" fill="#0b2340" opacity=".55"/>
-            <text x="127" y="194" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#cfe6fa">CO₂</text>
-          </g>
-
-          <g>
-            <rect x="174" y="88" width="92" height="204" rx="28" fill="url(#bodyB)"/>
-            <rect x="188" y="112" width="12" height="158" rx="6" fill="#ffffff" opacity=".55"/>
-            <rect x="192" y="64" width="56" height="32" rx="9" fill="#7f9db8"/>
-            <rect x="207" y="44" width="26" height="22" rx="6" fill="#3d6f96"/>
-            <rect x="214" y="30" width="12" height="16" rx="6" fill="#254d6d"/>
-            <rect x="186" y="164" width="68" height="28" rx="6" fill="#0f2740" opacity=".16"/>
-            <text x="220" y="184" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="14" font-weight="700" fill="#123a5c">N₂</text>
-          </g>
-
-          <g>
-            <rect x="272" y="122" width="74" height="170" rx="24" fill="url(#bodyC)"/>
-            <rect x="284" y="142" width="11" height="130" rx="5.5" fill="#ffffff" opacity=".3"/>
-            <rect x="287" y="100" width="44" height="28" rx="8" fill="#254d6d"/>
-            <rect x="299" y="84" width="20" height="20" rx="6" fill="#5d93bb"/>
-            <rect x="304" y="72" width="10" height="14" rx="5" fill="#c3d2e0"/>
-            <rect x="283" y="188" width="52" height="24" rx="6" fill="#0b2340" opacity=".35"/>
-            <text x="309" y="205" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#e8f3fb">He</text>
-          </g>
-
-          <circle cx="352" cy="60" r="4" fill="#5fb0ee"/>
-          <circle cx="352" cy="60" r="9" fill="none" stroke="#5fb0ee" stroke-width="1.2" opacity=".45"/>
-          <path d="M340 80h30" stroke="#3b6b93" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-          <path d="M344 90h22" stroke="#3b6b93" stroke-width="2" stroke-linecap="round" opacity=".45"/>
-        </svg>
-        <figcaption>취급 품목 예시 — 산소(O<sub>2</sub>) · 질소(N<sub>2</sub>) · 아르곤(Ar) · 헬륨(He)</figcaption>
+        <img class="hero-photo" src="assets/cylinders-lineup-hero.png" alt="명성산업가스 규격별 고압가스 용기 라인업" width="1254" height="1254" loading="eager" decoding="async">
+        <figcaption>규격별 고압가스 용기 — 산소 · 질소 · 아르곤 · 특수가스 · 고순도가스</figcaption>
       </figure>
     </div>
   </section>
@@ -942,6 +910,36 @@
           <h3>액화가스 · 탱크 설치</h3>
           <p>액화산소·액화질소·액화탄산·액화아르곤(액화알곤)을 공급하고 탱크 설치까지 진행합니다. 사용량과 설치 공간을 확인해 탱크 용량과 기화 방식, 납품 일정을 함께 상담해 드립니다.</p>
         </article>
+      </div>
+
+      <div class="cyl-block">
+        <h3>취급 용기 및 규격 안내</h3>
+        <p class="cyl-note">현장 사용량과 설치 공간에 맞춰 용기 규격을 골라 공급합니다. 실제 공급 용기는 가스 종류와 잔량 표시 방식에 따라 조금씩 다를 수 있습니다.</p>
+        <div class="cyl-grid">
+          <figure class="cyl-card">
+            <img src="assets/cylinders-nitrogen.png" alt="질소 등 일반·특수가스 용기" width="1269" height="1240" loading="lazy" decoding="async">
+            <figcaption>
+              <h4>일반·특수가스 용기 (질소 등)</h4>
+              <p>고압가스 용기별 표준 도색·표기와 안전 밸브를 갖춘 정품 용기로 납품합니다.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="cyl-card">
+            <img src="assets/cylinders-medical.png" alt="의료용 아산화질소 용기" width="1269" height="1240" loading="lazy" decoding="async">
+            <figcaption>
+              <h4>의료용 가스 용기</h4>
+              <p>병원·의료기관용 전용 용기를 위생 및 안전 기준에 맞춰 공급합니다.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="cyl-card">
+            <img src="assets/cylinders-sizes.png" alt="고압가스 용기 용량·규격 비교: 10.2L 75cm, 40.2L 125cm, 46.7L 145cm" width="1175" height="1339" loading="lazy" decoding="async">
+            <figcaption>
+              <h4>용기 용량·규격 비교 (10.2L · 40.2L · 46.7L)</h4>
+              <p>현장 사용량과 설치 공간에 맞춰 10.2L(75cm), 40.2L(125cm), 46.7L(145cm) 등 다양한 규격을 선택할 수 있습니다.</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
 
       <div class="table-block">
