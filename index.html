@@ -14,7 +14,7 @@
      · SSL 설치 전에 먼저 올려야 한다면 https:// 를 http:// 로 바꿔 주세요.
   2) 표기 정보 출처 — 상호·주소·대표전화는
      기존 홈페이지(고순도가스.kr) 하단 및 '연락처' 페이지에 게시된 내용을 그대로 사용했습니다.
-     개업일(2015-07-09)은 사업주 확인 내용, 인허가(고압가스·LPG 판매업 2019-06-19)는 공개 인허가 데이터 기준입니다.
+     개업일(2015-07-09)은 사업주 확인 내용, 인허가(고압가스·LPG 판매업)는 공개 인허가 데이터 기준입니다.
      2026-11-26 취급 품목은 사업주가 알려 준 거래처 자동 발송 문구를 기준으로 정리했습니다.
   3) 확인되지 않은 실적·인증 마크·수상 경력은 넣지 않았습니다.
   ===================================================================
@@ -118,13 +118,6 @@
     "식당 체적 LPG"
   ],
   "foundingDate": "2015-07-09",
-  "additionalProperty": [
-    {
-      "@type": "PropertyValue",
-      "name": "고압가스·LPG 판매업 인허가일",
-      "value": "2019-06-19"
-    }
-  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "취급 가스",
@@ -205,7 +198,7 @@
       "name": "사업자 정보를 알려 주세요.",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "상호는 명성산업가스이고 사업장 주소는 경기도 화성시 송산면 당성로 487-10입니다. 2015년 7월 9일에 개업해 지금까지 영업하고 있으며, 2019년 6월 19일 고압가스·LPG 판매업 인허가를 받았습니다."
+        "text": "상호는 명성산업가스이고 사업장 주소는 경기도 화성시 송산면 당성로 487-10입니다. 2015년 7월 9일에 개업해 지금까지 고압가스·LPG 판매업을 하고 있습니다."
       }
     }
   ]
@@ -331,10 +324,11 @@
   }
   .hero-inner{
     position:relative;
-    display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
-    gap:clamp(28px,5vw,56px);align-items:center;
-    padding:clamp(52px,8vw,96px) 0 clamp(44px,6vw,72px);
+    display:grid;grid-template-columns:minmax(0,28rem) minmax(0,1fr);
+    gap:clamp(36px,6vw,84px);align-items:center;
+    padding:clamp(60px,8.5vw,104px) 0 clamp(52px,6.5vw,80px);
   }
+  .hero-copy{max-width:28rem;}
   .eyebrow{
     display:inline-flex;align-items:center;gap:9px;
     font-size:.8rem;font-weight:700;letter-spacing:.08em;
@@ -345,17 +339,22 @@
   }
   .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:#5fb0ee;box-shadow:0 0 0 4px rgba(95,176,238,.18);}
   .hero h1{
-    font-size:clamp(1.85rem,3.6vw,2.95rem);
-    font-weight:800;letter-spacing:-.028em;line-height:1.28;
+    font-size:clamp(1.75rem,3vw,2.45rem);
+    font-weight:800;letter-spacing:-.028em;line-height:1.36;
     text-wrap:balance;
   }
   .hero h1 .accent{color:#79bdf0;}
   .hero-lead{
-    margin-top:20px;max-width:34em;
-    font-size:clamp(.98rem,1.2vw,1.08rem);
-    color:#c6d6e4;line-height:1.8;
+    margin-top:24px;max-width:26rem;
+    font-size:clamp(.95rem,1.1vw,1.02rem);
+    color:#c6d6e4;line-height:1.85;
   }
-  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;}
+  .hero-lead-sub{
+    margin-top:12px;max-width:26rem;
+    font-size:clamp(.88rem,1vw,.95rem);
+    color:#9db4c9;line-height:1.7;
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;}
   .btn{
     display:inline-flex;align-items:center;justify-content:center;gap:9px;
     font-weight:700;font-size:.98rem;
@@ -369,7 +368,7 @@
   .btn-ghost{background:transparent;color:#e6eef6;border-color:rgba(255,255,255,.32);}
   .btn-ghost:hover{border-color:rgba(255,255,255,.65);background:rgba(255,255,255,.06);}
 
-  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;}
+  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;}
   .hero-tags li{
     font-size:.82rem;font-weight:600;color:#b9cddd;
     border:1px solid rgba(195,210,224,.26);
@@ -705,11 +704,11 @@
       <a href="#faq">자주 묻는 질문</a>
     </nav>
 
-    <a class="header-cta" href="tel:+82314923370">
+    <a class="header-cta" href="tel:+821087511400">
       <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M4.5 5.2c0-.9.7-1.7 1.7-1.7h2.2c.7 0 1.4.5 1.6 1.2l.8 2.6c.2.6 0 1.3-.5 1.7l-1.3 1a12.2 12.2 0 0 0 5.1 5.1l1-1.3c.4-.5 1.1-.7 1.7-.5l2.6.8c.7.2 1.2.9 1.2 1.6v2.2c0 .9-.8 1.7-1.7 1.7C11.7 20.6 4.5 13.4 4.5 5.2Z"/>
       </svg>
-      031-492-3370
+      010-8751-1400
     </a>
   </div>
 </header>
@@ -717,15 +716,16 @@
 <main id="main">
   <section class="hero" id="top">
     <div class="wrap hero-inner">
-      <div>
+      <div class="hero-copy">
         <p class="eyebrow"><span class="dot" aria-hidden="true"></span>화성 · 시흥 · 안산 고압가스 · LPG · 고순도가스</p>
         <h1>산소·질소·아르곤·수소·아세틸렌과 <span class="accent">LPG</span>를<br>경기 서남부 현장으로 공급합니다</h1>
         <p class="hero-lead">
-          명성산업가스는 경기도 화성시 송산면에 사업장을 둔 고압가스·LPG 판매업체입니다.
-          산소(O<sub>2</sub>)·질소(N<sub>2</sub>)·아르곤(Ar)·탄산(CO<sub>2</sub>)·헬륨(He)·수소(H<sub>2</sub>)·아세틸렌(C<sub>2</sub>H<sub>2</sub>)·혼합가스,
-          고순도가스·의료용 산소, 액화산소·액화질소·액화탄산·액화아르곤 탱크 설치,
-          식당 체적 LPG(용기·탱크)까지 맡고 있습니다. 실험실·연구소·학교와 화성시·시흥시·안산시 일대의
-          산업단지·제조업체·병원·식당에 모든 가스를 대량공급할 수 있습니다.
+          명성산업가스는 경기 화성시 송산면의 고압가스·LPG 판매업체입니다.
+          산소·질소·아르곤·탄산·헬륨·수소·아세틸렌·혼합가스와 고순도가스·의료용 산소를 공급하고,
+          액화산소·액화질소·액화탄산·액화아르곤 탱크 설치와 식당 체적 LPG(용기·탱크)까지 맡고 있습니다.
+        </p>
+        <p class="hero-lead-sub">
+          화성·시흥·안산 산업단지와 제조업체·병원·식당, 실험실·연구소·학교로 대량 납품합니다.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="tel:+82314923370">
@@ -736,7 +736,7 @@
           </a>
         </div>
         <ul class="hero-tags">
-          <li>고압가스·LPG 판매업 인허가 2019</li>
+          <li>고압가스·LPG 판매업</li>
           <li>산소 · 질소 · 아르곤 · 수소</li>
           <li>고순도가스 · 의료용 산소</li>
           <li>액화가스 · 탱크 설치</li>
@@ -822,7 +822,7 @@
       <div class="section-head">
         <span class="kicker">회사소개</span>
         <h2 id="about-title">시흥·화성·안산 고압가스, 명성산업가스입니다</h2>
-        <p>경기도 화성시 송산면 당성로 487-10에 사업장을 두고, 2015년 7월 9일 개업한 뒤 2019년 6월 19일 고압가스·LPG 판매업 인허가를 받아 영업하고 있습니다.</p>
+        <p>경기도 화성시 송산면 당성로 487-10에 사업장을 두고, 2015년 7월 9일 개업한 뒤 지금까지 고압가스·LPG 판매업을 하고 있습니다.</p>
       </div>
 
       <div class="about-grid">
@@ -853,7 +853,7 @@
             <div><dt>상호</dt><dd>명성산업가스</dd></div>
             <div><dt>개업일</dt><dd>2015-07-09</dd></div>
             <div><dt>소재지</dt><dd>경기도 화성시 송산면 당성로 487-10<br><span class="muted">(지번: 송산면 칠곡리 134-37)</span></dd></div>
-            <div><dt>인허가</dt><dd>고압가스·LPG 판매업 <span class="license-chip">2019-06-19 인허가</span></dd></div>
+            <div><dt>인허가</dt><dd>고압가스·LPG 판매업</dd></div>
             <div><dt>대표전화</dt><dd><a href="tel:+82314923370">031-492-3370</a></dd></div>
             <div><dt>휴대전화</dt><dd><a href="tel:+821087511400">010-8751-1400</a></dd></div>
           </dl>
@@ -1251,7 +1251,7 @@
           <summary><span class="q" aria-hidden="true">Q</span>사업자 정보를 알려 주세요.</summary>
           <div class="answer">
             상호는 명성산업가스이고, 사업장 주소는 경기도 화성시 송산면 당성로 487-10입니다.
-            2015년 7월 9일에 개업해 지금까지 영업하고 있으며, 2019년 6월 19일 고압가스·LPG 판매업 인허가를 받았습니다.
+            2015년 7월 9일에 개업해 지금까지 고압가스·LPG 판매업을 하고 있습니다.
           </div>
         </details>
       </div>
@@ -1292,7 +1292,7 @@
     <dl class="biz-info">
       <div><dt>상호</dt><dd>명성산업가스</dd></div>
       <div><dt>개업</dt><dd>2015-07-09</dd></div>
-      <div><dt>인허가</dt><dd>고압가스·LPG 판매업 (2019-06-19)</dd></div>
+      <div><dt>인허가</dt><dd>고압가스·LPG 판매업</dd></div>
       <div><dt>소재지</dt><dd>경기도 화성시 송산면 당성로 487-10</dd></div>
     </dl>
 
