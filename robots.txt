@@ -1,4 +1,4 @@
-# robots.txt — 명성산업가스 (www.고순도가스.kr)
+# robots.txt — 명성산업가스
 # 사이트가 http 로 운영 중이면 아래 Sitemap 주소의 https 를 http 로 바꿔 주세요.
 
 # 기본: 모든 크롤러 허용
@@ -68,6 +68,6 @@ User-agent: cohere-ai
 Allow: /
 
 # AI 요약 문서 (llmstxt.org 규격)
-# https://www.xn--o39apqm9nw3prta.kr/llms.txt
+# https://msgaa.github.io/llms.txt
 
 Sitemap: https://msgaa.github.io/sitemap.xml
